@@ -1,0 +1,255 @@
+
+@font-face {
+    src: url("fonts/Eurocat-Medium.woff") format("woff"),
+         url('fonts/Eurocat-Medium.otf') format("truetype"),
+        url('fonts/Eurocat-Medium.woff2') format('woff2');
+
+    font-family: 'Eurocat';
+    font-style: normal;
+    font-weight: normal;
+    }
+    
+    body{
+    background-color: "TrINA.png";
+    background-color: #7e7ece;
+    font-family: 'Eurocat';
+
+    .paragraphs {
+        display: flex;
+      }
+      
+      .paragraphs p {
+        flex: 1;
+        margin-right: 10px; /* Adjust as needed */
+      }
+      
+      .font3 {
+        font-family: 'Eurocat-Regular';
+        src: url("fonts/Eurocat-Regular.woff") format("woff"),
+             url('fonts/Eurocat-Regular.otf') format("truetype"),
+            url('fonts/Eurocat-Regular.woff2') format('woff2');
+            color:antiquewhite
+    }
+      .font2 {
+        font-family: 'EurocatSans-Regular';
+        src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+             url('fonts/EurocatSans-Regular.otf') format("truetype"),
+            url('fonts/EurocatSans-Regular.woff2') format('woff2');
+            color:antiquewhite
+        }
+        }
+    
+      .font1 {
+        font-family: 'EurocatBase-Regular';
+        src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+             url('fonts/EurocatBase-Regular.otf') format("truetype"),
+            url('fonts/EurocatBase-Regular.woff2') format('woff2');
+        color:antiquewhite
+        
+        }
+        }
+
+/* how the page wrapper will appear on mobile */
+.page-wrapper{
+    width: min(100% - 3rem, 80ch);
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+.history {
+grid-area: h;
+}
+
+.variations{
+grid-area: v;
+}
+
+.alphabet {
+grid-area: a;
+}
+}
+/* CSS for the footer */
+footer{
+    background-color: gray;
+}
+
+/* variable font animation */
+h1{
+    font-weight:100; 
+    text-align: center;
+    font-size: 8em;
+    animation: weightChange 5s infinite;
+}
+
+@keyframes weightChange {
+    0%, 100%{
+        font-weight:100;
+    }
+    50%{font-weight:700;
+    }
+    
+}
+/* variable font that changes on hover */
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 3;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        ". h h h h h h h h h h ."
+        "m c c c c c c c c c c c"
+        ". f f f f f f f f f f .";
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+
+#fontdisplay {
+    padding: 0em 11em;
+}
+
+.paragraphs > p {
+    text-align:justify;
+    margin: 0em 3em;
+}
+
+.variations {
+    font-family: 'EurocatSans-Regular';
+    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+         url('fonts/EurocatSans-Regular.otf') format("truetype"),
+        url('fonts/EurocatSans-Regular.woff2') format('woff2');
+        color:#000084
+
+}
+.history {
+    font-family: 'EurocatSans-Regular';
+    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+         url('fonts/EurocatSans-Regular.otf') format("truetype"),
+        url('fonts/EurocatSans-Regular.woff2') format('woff2');
+        color:antiquewhite
+}
+.history2 {
+    font-family: 'EurocatSans-Regular';
+    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+         url('fonts/EurocatSans-Regular.otf') format("truetype"),
+        url('fonts/EurocatSans-Regular.woff2') format('woff2');
+        color:antiquewhite
+        
+}
+.stuff{
+font-family: 'EurocatSans-Regular';
+    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+         url('fonts/EurocatSans-Regular.otf') format("truetype"),
+        url('fonts/EurocatSans-Regular.woff2') format('woff2');
+        color:antiquewhite
+}
+.stuff > p {
+    text-align:justify;
+    margin: 0em 3em;
+    padding: 0em 2em;
+}
+
+.Eurocat Title {
+    font-family: 'EurocatBase-Regular';
+    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+         url('fonts/EurocatBase-Regular.otf') format("truetype"),
+        url('fonts/EurocatBase-Regular.woff2') format('woff2');
+            color: white
+}
+
+.Eurcat Title{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+
+}
+
+
+h5{
+            font-weight:100; 
+            text-align: center;
+            font-size: 8em;
+            animation: weightChange 5s infinite;
+            color: white
+            
+        }
+        
+        @keyframes weightChange {
+            0%, 100%{
+                font-weight:100;
+            }
+            50%{font-weight:700;
+                color: blue;
+               
+            }
+            
+            
+}
+
+
+
+
+    }
+
+
+
+
+        
