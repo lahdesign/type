@@ -312,6 +312,41 @@ h5{
          url('fonts/EurocatBase-Regular.otf') format("truetype"),
         url('fonts/EurocatBase-Regular.woff2') format('woff2');
             color: white
+}
+.half-width3 {
+    width: 40%;
+    margin: 0em 3em ; /* Center the content horizontally */
+              }
+              
+    .left-justified3 {
+    text-align: left;
+    color:white
+    }
+            
+.left-justified3 {   
+                font-family: 'EurocatBase-Regular';
+                src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+                     url('fonts/EurocatBase-Regular.otf') format("truetype"),
+                    url('fonts/EurocatBase-Regular.woff2') format('woff2');
+                        color: white
+}
+                            .half-width2 {
+                            width: 40%;
+                            margin: 0em 3em ; /* Center the content horizontally */
+                          }
+                          
+                          .left-justified4 {
+                            text-align: left;
+                            color:white
+                          }
+                        
+                        .left-justified4 {   
+                            font-family: 'EurocatBase-Regular';
+                            src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+                                 url('fonts/EurocatBase-Regular.otf') format("truetype"),
+                                url('fonts/EurocatBase-Regular.woff2') format('woff2');
+                                    color: white
+                        }
 
 
 
