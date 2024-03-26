@@ -177,6 +177,8 @@ h1{
          url('fonts/EurocatSans-Regular.otf') format("truetype"),
         url('fonts/EurocatSans-Regular.woff2') format('woff2');
         color:antiquewhite
+
+margin:
 }
 .history2 {
     font-family: 'EurocatSans-Regular';
@@ -274,6 +276,42 @@ h5{
             
 }
 
+.half-width {
+    width: 40%;
+    margin: 0em 3em ; /* Center the content horizontally */
+  }
+  
+  .left-justified {
+    text-align: left;
+    color:white
+  }
+
+.left-justified {   
+    font-family: 'EurocatBase-Regular';
+    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+         url('fonts/EurocatBase-Regular.otf') format("truetype"),
+        url('fonts/EurocatBase-Regular.woff2') format('woff2');
+            color: white
+  
+
+  }
+  
+  .half-width2 {
+    width: 40%;
+    margin: 0em 3em ; /* Center the content horizontally */
+  }
+  
+  .left-justified2 {
+    text-align: left;
+    color:white
+  }
+
+.left-justified2 {   
+    font-family: 'EurocatBase-Regular';
+    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+         url('fonts/EurocatBase-Regular.otf') format("truetype"),
+        url('fonts/EurocatBase-Regular.woff2') format('woff2');
+            color: white
 
 
 
