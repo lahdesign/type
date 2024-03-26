@@ -199,6 +199,36 @@ font-family: 'EurocatSans-Regular';
     padding: 0em 2em;
 }
 
+.shadow {
+    background-color: #0015ff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position:relative 
+}
+.shadow {
+
+    bottom: -1100px; 
+    right: -970px;  
+    padding: 10px 20px;
+}
+
+.shadow:hover {
+    background-color: #000479;
+}
+
+.shadow{
+    font-family: 'EurocatBase-Regular';
+    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+         url('fonts/EurocatBase-Regular.otf') format("truetype"),
+        url('fonts/EurocatBase-Regular.woff2') format('woff2');
+            color: white
+}
+
 .Eurocat Title {
     font-family: 'EurocatBase-Regular';
     src: url("fonts/EurocatBase-Regular.woff") format("woff"),
@@ -245,9 +275,6 @@ h5{
 }
 
 
-
-
-    }
 
 
 
