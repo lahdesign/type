@@ -178,7 +178,7 @@ h1{
         url('fonts/EurocatSans-Regular.woff2') format('woff2');
         color:antiquewhite
 
-margin:
+
 }
 .history2 {
     font-family: 'EurocatSans-Regular';
@@ -196,7 +196,7 @@ font-family: 'EurocatSans-Regular';
         color:antiquewhite
 }
 .stuff > p {
-    text-align:justify;
+    text-align:center, justify;
     margin: 0em 3em;
     padding: 0em 2em;
 }
@@ -215,7 +215,7 @@ font-family: 'EurocatSans-Regular';
 .shadow {
 
     bottom: -1100px; 
-    right: -970px;  
+    right: -1500px;  
     padding: 10px 20px;
 }
 
@@ -315,7 +315,7 @@ h5{
 }
 .half-width3 {
     width: 40%;
-    margin: 0em 3em ; /* Center the content horizontally */
+    margin: 0em 3em ; 
               }
               
     .left-justified3 {
@@ -324,29 +324,34 @@ h5{
     }
             
 .left-justified3 {   
-                font-family: 'EurocatBase-Regular';
-                src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-                     url('fonts/EurocatBase-Regular.otf') format("truetype"),
-                    url('fonts/EurocatBase-Regular.woff2') format('woff2');
-                        color: white
+    font-family: 'EurocatBase-Regular';
+    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+    url('fonts/EurocatBase-Regular.otf') format("truetype"),
+    url('fonts/EurocatBase-Regular.woff2') format('woff2');
+    color: white
 }
-                            .half-width2 {
-                            width: 40%;
-                            margin: 0em 3em ; /* Center the content horizontally */
-                          }
+     .half-width3 {
+     width: 40%;
+    margin: 0em 3em ; 
+}
                           
-                          .left-justified4 {
-                            text-align: left;
-                            color:white
-                          }
+     .left-justified4 {
+        text-align: left;
+        color:white
+}
+
+.half-width4 {
+    width: 40%;
+   margin: 0em 3em ; 
+}
                         
-                        .left-justified4 {   
-                            font-family: 'EurocatBase-Regular';
-                            src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-                                 url('fonts/EurocatBase-Regular.otf') format("truetype"),
-                                url('fonts/EurocatBase-Regular.woff2') format('woff2');
-                                    color: white
-                        }
+    .left-justified4 {   
+        font-family: 'EurocatBase-Regular';
+        src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+        url('fonts/EurocatBase-Regular.otf') format("truetype"),
+        url('fonts/EurocatBase-Regular.woff2') format('woff2');
+        color: white
+ }
 
 
 
