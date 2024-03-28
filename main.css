@@ -1,54 +1,86 @@
-
 @font-face {
     src: url("fonts/Eurocat-Medium.woff") format("woff"),
-         url('fonts/Eurocat-Medium.otf') format("truetype"),
-        url('fonts/Eurocat-Medium.woff2') format('woff2');
+         url('fonts/Eurocat-Medium.otf') format("otf"),
+         url('fonts/Eurocat-Medium.woff2') format('woff2');
 
     font-family: 'Eurocat';
     font-style: normal;
     font-weight: normal;
-    }
+}
+
+@font-face {
+    src: url("fonts/Jost-Light.ttf") format("truetype");
+    font-family: 'Jost';
+    font-weight: light;
+}
     
-    body{
-    background-color: "TrINA.png";
+@font-face {
+    font-family: 'Eurocat-Regular';
+    src: url("fonts/Eurocat-Regular.woff") format("woff"),
+         url('fonts/Eurocat-Regular.otf') format("otf"),
+         url('fonts/Eurocat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'EurocatSans-Regular';
+    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+         url('fonts/EurocatSans-Regular.otf') format("otf"),
+         url('fonts/EurocatSans-Regular.woff2') format('woff2');
+}
+
+@font-face {    
+    font-family: 'EurocatBase-Regular';
+    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
+         url('fonts/EurocatBase-Regular.otf') format("otf"),
+         url('fonts/EurocatBase-Regular.woff2') format('woff2');
+}
+
+body {
     background-color: #7e7ece;
-    font-family: 'Eurocat';
+    font-family: 'Eurocat'; 
+}
+
+.variations {
+    
+    grid-area:auto; 
+    grid-template-columns: auto;
+    
+}
+        
+
+    .font1 {
+        align-self: start;
+        font-family: 'EurocatBase-Regular';
+        color:antiquewhite
+    }
+      
+
+    .font2 {
+        align-self: start;
+        font-family: 'EurocatSans-Regular';
+        color:antiquewhite
+      }
+
+    .font3 {
+        align-self: start;
+        font-family: 'Eurocat-Regular';
+        color:antiquewhite
+    }
+      
 
     .paragraphs {
         display: flex;
-      }
+    }
       
-      .paragraphs p {
+    .paragraphs p {
         flex: 1;
         margin-right: 10px; /* Adjust as needed */
-      }
-      
-      .font3 {
-        font-family: 'Eurocat-Regular';
-        src: url("fonts/Eurocat-Regular.woff") format("woff"),
-             url('fonts/Eurocat-Regular.otf') format("truetype"),
-            url('fonts/Eurocat-Regular.woff2') format('woff2');
-            color:antiquewhite
     }
-      .font2 {
-        font-family: 'EurocatSans-Regular';
-        src: url("fonts/EurocatSans-Regular.woff") format("woff"),
-             url('fonts/EurocatSans-Regular.otf') format("truetype"),
-            url('fonts/EurocatSans-Regular.woff2') format('woff2');
-            color:antiquewhite
-        }
-        }
     
-      .font1 {
-        font-family: 'EurocatBase-Regular';
-        src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-             url('fonts/EurocatBase-Regular.otf') format("truetype"),
-            url('fonts/EurocatBase-Regular.woff2') format('woff2');
-        color:antiquewhite
-        
-        }
-        }
+    
+ 
 
+    
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 3rem, 80ch);
@@ -57,35 +89,36 @@
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
-.page-wrapper{
-display: grid;
-grid-gap: 25px;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-grid-template-areas: 
-    "h v"
-    "a a";
+    .page-wrapper{
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "h v"
+            "a a";
+    }
+
+    .history {
+        grid-area: h;
+    }
+
+    .variations{
+        grid-area: v;
+    }
+
+    .alphabet {
+        grid-area: a;
+    }
 }
 
-.history {
-grid-area: h;
-}
-
-.variations{
-grid-area: v;
-}
-
-.alphabet {
-grid-area: a;
-}
-}
 /* CSS for the footer */
 footer{
     background-color: gray;
 }
 
 /* variable font animation */
-h1{
+h1 {
     font-weight:100; 
     text-align: center;
     font-size: 8em;
@@ -100,12 +133,13 @@ h1{
     }
     
 }
+
 /* variable font that changes on hover */
-.variable-font{
-    font-weight:1 ;
-    height:100vh;
+.variable-font {
+    font-weight: 1;
+    height: 100vh;
     font-size: 10em;
-    display:grid;
+    display: grid;
     place-content: center;
     margin: 0;
     text-align: center;
@@ -161,7 +195,9 @@ h1{
 .paragraphs > p {
     text-align:justify;
     margin: 0em 3em;
-}
+    padding-right: 4em; 
+    padding-left: 4em;
+  }
 
 .variations {
     font-family: 'EurocatSans-Regular';
@@ -176,29 +212,33 @@ h1{
     src: url("fonts/EurocatSans-Regular.woff") format("woff"),
          url('fonts/EurocatSans-Regular.otf') format("truetype"),
         url('fonts/EurocatSans-Regular.woff2') format('woff2');
-        color:antiquewhite
+        color:white
 
 
 }
 .history2 {
     font-family: 'EurocatSans-Regular';
-    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
+    src: url("fonts/Roboto-Light.woff") format("woff"),
          url('fonts/EurocatSans-Regular.otf') format("truetype"),
         url('fonts/EurocatSans-Regular.woff2') format('woff2');
-        color:antiquewhite
+        color:white
         
 }
+
+
+  
 .stuff{
-font-family: 'EurocatSans-Regular';
-    src: url("fonts/EurocatSans-Regular.woff") format("woff"),
-         url('fonts/EurocatSans-Regular.otf') format("truetype"),
-        url('fonts/EurocatSans-Regular.woff2') format('woff2');
-        color:antiquewhite
+    font-family: "Jost";
+    color:white;
+    margin: 0em 7em;
 }
+
 .stuff > p {
     text-align:center, justify;
     margin: 0em 3em;
-    padding: 0em 2em;
+    padding: 0em 3em;
+    padding-right: 5em; 
+    padding-left: 5em;
 }
 
 .shadow {
@@ -225,21 +265,15 @@ font-family: 'EurocatSans-Regular';
 
 .shadow{
     font-family: 'EurocatBase-Regular';
-    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-         url('fonts/EurocatBase-Regular.otf') format("truetype"),
-        url('fonts/EurocatBase-Regular.woff2') format('woff2');
-            color: white
+    color: white
 }
 
-.Eurocat Title {
+.Eurocat_Title {
     font-family: 'EurocatBase-Regular';
-    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-         url('fonts/EurocatBase-Regular.otf') format("truetype"),
-        url('fonts/EurocatBase-Regular.woff2') format('woff2');
-            color: white
+    color: white
 }
 
-.Eurcat Title{
+.Eurocat_Title{
     font-weight:1 ;
     height:100vh;
     font-size: 10em;
@@ -275,86 +309,34 @@ h5{
             
             
 }
-
-.half-width {
-    width: 40%;
-    margin: 0em 3em ; /* Center the content horizontally */
-  }
-  
-  .left-justified {
-    text-align: left;
-    color:white
-  }
-
-.left-justified {   
-    font-family: 'EurocatBase-Regular';
-    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-         url('fonts/EurocatBase-Regular.otf') format("truetype"),
-        url('fonts/EurocatBase-Regular.woff2') format('woff2');
-            color: white
-  
-
-  }
-  
-  .half-width2 {
-    width: 40%;
-    margin: 0em 3em ; /* Center the content horizontally */
-  }
-  
-  .left-justified2 {
-    text-align: left;
-    color:white
-  }
-
-.left-justified2 {   
-    font-family: 'EurocatBase-Regular';
-    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-         url('fonts/EurocatBase-Regular.otf') format("truetype"),
-        url('fonts/EurocatBase-Regular.woff2') format('woff2');
-            color: white
-}
-.half-width3 {
-    width: 40%;
-    margin: 0em 3em ; 
-              }
-              
-    .left-justified3 {
-    text-align: left;
-    color:white
-    }
-            
-.left-justified3 {   
-    font-family: 'EurocatBase-Regular';
-    src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-    url('fonts/EurocatBase-Regular.otf') format("truetype"),
-    url('fonts/EurocatBase-Regular.woff2') format('woff2');
-    color: white
-}
-     .half-width3 {
-     width: 40%;
-    margin: 0em 3em ; 
-}
-                          
-     .left-justified4 {
-        text-align: left;
-        color:white
-}
-
+.container {
+    display: inline-flex; 
+}.half-width3,
 .half-width4 {
-    width: 40%;
-   margin: 0em 3em ; 
+  width: 0%;
+  margin: 0em 2em; 
+  padding-right: 4em; 
+  padding-left:  8em;
+}.left-justified3,
+.left-justified4{
+    text-align: left;
+    color: white;
+    font-family: 'EurocatBase-Regular';
+  }
+
+  .container {
+    display: inline-flex; 
+}.half-width,
+.half-width2{
+  width: 60%;
+  margin: 2em 3em;  
+  padding-right: 2em;
+  padding-left: 4em; 
 }
-                        
-    .left-justified4 {   
-        font-family: 'EurocatBase-Regular';
-        src: url("fonts/EurocatBase-Regular.woff") format("woff"),
-        url('fonts/EurocatBase-Regular.otf') format("truetype"),
-        url('fonts/EurocatBase-Regular.woff2') format('woff2');
-        color: white
- }
 
-
-
-
-
-        
+.left-justified,
+.left-justified2{
+    text-align: left;
+    color: white;
+    font-family: 'EurocatBase-Regular';
+  }
