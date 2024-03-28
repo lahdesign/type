@@ -17,15 +17,15 @@
 @font-face {
     font-family: 'Eurocat-Regular';
     src: url("fonts/Eurocat-Regular.woff") format("woff"),
-         url('fonts/Eurocat-Regular.otf') format("otf"),
-         url('fonts/Eurocat-Regular.woff2') format('woff2');
+         url("fonts/Eurocat-Regular.otf") format("otf"),
+         url("fonts/Eurocat-Regular.woff2") format('woff2');
 }
 
 @font-face {
     font-family: 'EurocatSans-Regular';
     src: url("fonts/EurocatSans-Regular.woff") format("woff"),
-         url('fonts/EurocatSans-Regular.otf') format("otf"),
-         url('fonts/EurocatSans-Regular.woff2') format('woff2');
+         url("fonts/EurocatSans-Regular.otf") format("otf"),
+         url("fonts/EurocatSans-Regular.woff2") format('woff2');
 }
 
 @font-face {    
@@ -40,29 +40,30 @@ body {
     font-family: 'Eurocat'; 
 }
 
-.variations {
-    
-    grid-area:auto; 
-    grid-template-columns: auto;
+.variations-container {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr; 
+    grid-template-rows: auto;
+    /* grid-template-columns: auto; */
     
 }
         
 
     .font1 {
-        align-self: start;
+        /* align-self: start; */
         font-family: 'EurocatBase-Regular';
         color:antiquewhite
     }
       
 
     .font2 {
-        align-self: start;
+        /* align-self: start; */
         font-family: 'EurocatSans-Regular';
         color:antiquewhite
       }
 
     .font3 {
-        align-self: start;
+        /* align-self: start; */
         font-family: 'Eurocat-Regular';
         color:antiquewhite
     }
@@ -84,11 +85,11 @@ body {
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 3rem, 80ch);
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 /* how the page wrapper appears on desktop */
 
-@media only screen and (min-width:800px){
+/* @media only screen and (min-width:800px){
     .page-wrapper{
         display: grid;
         grid-gap: 25px;
@@ -110,7 +111,7 @@ body {
     .alphabet {
         grid-area: a;
     }
-}
+} */
 
 /* CSS for the footer */
 footer{
@@ -160,7 +161,7 @@ h1 {
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
-.container {
+/* .container {
     height: 100%;
     display: grid;
     grid-gap: 3px;
@@ -170,7 +171,7 @@ h1 {
         ". h h h h h h h h h h ."
         "m c c c c c c c c c c c"
         ". f f f f f f f f f f .";
-}
+} */
 
 .header {
     grid-area: h;
